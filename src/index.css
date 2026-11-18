@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Poppins", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --color-clinic-teal: #087F8C;
+  --color-clinic-teal-dark: #066671;
+  --color-clinic-navy: #12304A;
+  --color-clinic-sky: #EAF7FA;
+  --color-clinic-grey: #F5F8FA;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    text-wrap: balance;
+  }
+
+  button, a, input, select, textarea {
+    outline-color: #087F8C;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
